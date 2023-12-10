@@ -26,6 +26,29 @@ public class BinarySearchTree {
         System.out.println("inserted");
     }
 
+    public boolean contains(int value){
+       // if (root == null) return false;
+        Node temp = root;
+        //if (value == temp.value) return true;
+     while (temp != null){
+         if (value< temp.value){
+             temp = temp.left;
+            // if(value == temp.value) return true;
+
+
+         }else if (value > temp.value){
+             temp = temp.right;
+             //if (value == temp.value) return true;
+         }
+         else {
+             return true;
+         }
+
+
+     }
+     return false;
+
+    }
     public Node getRoot() {
         return root;
     }

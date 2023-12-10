@@ -15,5 +15,11 @@ public class Main {
         System.out.println(bst.getRoot().right.value); // 9
         System.out.println(bst.getRoot().left.left.value); // 3
         System.out.println(bst.getRoot().right.right.value); // 10
+
+        System.out.println();
+
+            System.out.println(bst.contains(9));
+
+
     }
 }
